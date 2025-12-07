@@ -6,7 +6,7 @@ authors = [
 	{ name = "Brandon Knutson", email = "bknutson@mines.edu" }
 ]
 readme = "README.md"
-requires-python = ">=3.10.6,<3.12.0"
+requires-python = ">=3.11.0,<3.12.0"
 
 dependencies = [
     "numpy==1.26.4",
@@ -18,7 +18,7 @@ dependencies = [
     "termcolor>=3.1.0",
     "omegaconf>=2.3.0",
     "plotly>=6.1.1",
-    "easy-to-hard-data>=1.0.0",
+    # "easy-to-hard-data>=1.0.0", #TODO: add back
 ]
 
 [dependency-groups]
@@ -77,5 +77,5 @@ dev = [
 	cache_dir = ".mypy_cache"
 
 [tool.uv.sources]
-	maze-dataset = { git = "https://github.com/understanding-search/maze-dataset", branch = "dev" } # TODO: switch to pypi
-	# maze-dataset = { path = "../maze-dataset" }
+	# maze-dataset = { git = "https://github.com/understanding-search/maze-dataset", branch = "dev" } # TODO: switch to pypi
+	maze-dataset = { path = "../maze-dataset" }
