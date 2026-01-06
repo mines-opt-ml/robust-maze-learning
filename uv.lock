@@ -947,7 +947,7 @@ wheels = [
 [[package]]
 name = "maze-dataset"
 version = "1.4.0"
-source = { directory = "../maze-dataset" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "ipykernel" },
     { name = "jaxtyping" },
@@ -958,51 +958,10 @@ dependencies = [
     { name = "tqdm" },
     { name = "zanj" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "frozendict", marker = "extra == 'tokenization'", specifier = ">=2.4.4" },
-    { name = "ipykernel", specifier = ">=6.22.0" },
-    { name = "jaxtyping", specifier = ">=0.2.19" },
-    { name = "jupyter", specifier = ">=1.0.0" },
-    { name = "matplotlib", specifier = ">=3.7.0" },
-    { name = "muutils", specifier = ">=0.8.3" },
-    { name = "numpy" },
-    { name = "rust-fst", marker = "sys_platform != 'darwin' and extra == 'tokenization'", specifier = ">=0.1.2" },
-    { name = "tqdm", specifier = ">=4.65.0" },
-    { name = "zanj", specifier = ">=0.5.0" },
+sdist = { url = "https://files.pythonhosted.org/packages/0f/a1/ea8c35fc2dd134dee0b4e37159f70125a26f9f81f102c2294d6c3b46cada/maze_dataset-1.4.0.tar.gz", hash = "sha256:7288c763b4656f23dfa3621474378febf7a43c6bf1b4ad8627e681a9bd98349b", size = 16724929 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5b/cf/cde17495a8fb674d8708a4f9587e2270a76892ec8858d6fe0a766d363b16/maze_dataset-1.4.0-py3-none-any.whl", hash = "sha256:4717e4f6abb95ee4ec03d437c0d4e3bf0e0a5355663cfccb5302f26a3370c763", size = 145576 },
 ]
-
-[package.metadata.requires-dev]
-benchmark = [
-    { name = "pysr", specifier = ">=1.4.0" },
-    { name = "seaborn" },
-]
-dev = [
-    { name = "coverage-badge", specifier = ">=1.1.0" },
-    { name = "mypy", specifier = ">=1.0.1" },
-    { name = "nbmake", specifier = ">=1.5.5" },
-    { name = "pandas", specifier = ">=2.2.2" },
-    { name = "pandas-stubs" },
-    { name = "pytest", specifier = ">=8.2.2" },
-    { name = "pytest-cov", specifier = ">=4.1.0" },
-    { name = "pytest-mock", specifier = ">=3.10.0" },
-    { name = "pytest-xdist", specifier = ">=3.6.1" },
-    { name = "twine" },
-    { name = "types-psutil" },
-    { name = "types-tqdm" },
-]
-docs = [
-    { name = "lmcat", marker = "python_full_version >= '3.11'", specifier = ">=0.2.0" },
-    { name = "nbconvert", specifier = ">=7.16.4" },
-    { name = "pdoc", specifier = ">=14.6.0" },
-    { name = "tomli", marker = "python_full_version < '3.11'", specifier = ">=2.1.0" },
-]
-extra-tokenization = [
-    { name = "frozendict", specifier = ">=2.4.4" },
-    { name = "rust-fst", marker = "sys_platform != 'darwin'", specifier = ">=0.1.2" },
-]
-lint = [{ name = "ruff", specifier = ">=0.4.8" }]
 
 [[package]]
 name = "mistune"
@@ -1335,6 +1294,27 @@ wheels = [
 ]
 
 [[package]]
+name = "pandas"
+version = "2.3.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "python-dateutil" },
+    { name = "pytz" },
+    { name = "tzdata" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/33/01/d40b85317f86cf08d853a4f495195c73815fdf205eef3993821720274518/pandas-2.3.3.tar.gz", hash = "sha256:e05e1af93b977f7eafa636d043f9f94c7ee3ac81af99c13508215942e64c993b", size = 4495223 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/fa/7ac648108144a095b4fb6aa3de1954689f7af60a14cf25583f4960ecb878/pandas-2.3.3-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:602b8615ebcc4a0c1751e71840428ddebeb142ec02c786e8ad6b1ce3c8dec523", size = 11578790 },
+    { url = "https://files.pythonhosted.org/packages/9b/35/74442388c6cf008882d4d4bdfc4109be87e9b8b7ccd097ad1e7f006e2e95/pandas-2.3.3-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:8fe25fc7b623b0ef6b5009149627e34d2a4657e880948ec3c840e9402e5c1b45", size = 10833831 },
+    { url = "https://files.pythonhosted.org/packages/fe/e4/de154cbfeee13383ad58d23017da99390b91d73f8c11856f2095e813201b/pandas-2.3.3-cp311-cp311-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:b468d3dad6ff947df92dcb32ede5b7bd41a9b3cceef0a30ed925f6d01fb8fa66", size = 12199267 },
+    { url = "https://files.pythonhosted.org/packages/bf/c9/63f8d545568d9ab91476b1818b4741f521646cbdd151c6efebf40d6de6f7/pandas-2.3.3-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:b98560e98cb334799c0b07ca7967ac361a47326e9b4e5a7dfb5ab2b1c9d35a1b", size = 12789281 },
+    { url = "https://files.pythonhosted.org/packages/f2/00/a5ac8c7a0e67fd1a6059e40aa08fa1c52cc00709077d2300e210c3ce0322/pandas-2.3.3-cp311-cp311-musllinux_1_2_aarch64.whl", hash = "sha256:1d37b5848ba49824e5c30bedb9c830ab9b7751fd049bc7914533e01c65f79791", size = 13240453 },
+    { url = "https://files.pythonhosted.org/packages/27/4d/5c23a5bc7bd209231618dd9e606ce076272c9bc4f12023a70e03a86b4067/pandas-2.3.3-cp311-cp311-musllinux_1_2_x86_64.whl", hash = "sha256:db4301b2d1f926ae677a751eb2bd0e8c5f5319c9cb3f88b0becbbb0b07b34151", size = 13890361 },
+    { url = "https://files.pythonhosted.org/packages/8e/59/712db1d7040520de7a4965df15b774348980e6df45c129b8c64d0dbe74ef/pandas-2.3.3-cp311-cp311-win_amd64.whl", hash = "sha256:f086f6fe114e19d92014a1966f43a3e62285109afe874f067f5abbdcbb10e59c", size = 11348702 },
+]
+
+[[package]]
 name = "pandocfilters"
 version = "1.5.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1576,6 +1556,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pytz"
+version = "2025.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz", hash = "sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3", size = 320884 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl", hash = "sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00", size = 509225 },
+]
+
+[[package]]
 name = "pywin32"
 version = "310"
 source = { registry = "https://pypi.org/simple" }
@@ -1719,6 +1708,7 @@ dependencies = [
     { name = "maze-dataset" },
     { name = "numpy" },
     { name = "omegaconf" },
+    { name = "pandas" },
     { name = "plotly" },
     { name = "ripser" },
     { name = "scipy" },
@@ -1738,9 +1728,10 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "maze-dataset", directory = "../maze-dataset" },
+    { name = "maze-dataset", specifier = ">=1.3.1" },
     { name = "numpy", specifier = "==1.26.4" },
     { name = "omegaconf", specifier = ">=2.3.0" },
+    { name = "pandas", specifier = ">=2.3.3" },
     { name = "plotly", specifier = ">=6.1.1" },
     { name = "ripser", specifier = ">=0.6.12" },
     { name = "scipy", specifier = ">=1.15.1" },
@@ -2123,6 +2114,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/0e/3e/b00a62db91a83fff600de219b6ea9908e6918664899a2d85db222f4fbf19/typing_extensions-4.13.0.tar.gz", hash = "sha256:0a4ac55a5820789d87e297727d229866c9650f6521b64206413c4fbada24d95b", size = 106520 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e0/86/39b65d676ec5732de17b7e3c476e45bb80ec64eb50737a8dce1a4178aba1/typing_extensions-4.13.0-py3-none-any.whl", hash = "sha256:c8dd92cc0d6425a97c18fbb9d1954e5ff92c1ca881a309c45f06ebc0b79058e5", size = 45683 },
+]
+
+[[package]]
+name = "tzdata"
+version = "2025.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/5e/a7/c202b344c5ca7daf398f3b8a477eeb205cf3b6f32e7ec3a6bac0629ca975/tzdata-2025.3.tar.gz", hash = "sha256:de39c2ca5dc7b0344f2eba86f49d614019d29f060fc4ebc8a417896a620b56a7", size = 196772 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c7/b0/003792df09decd6849a5e39c28b513c06e84436a54440380862b5aeff25d/tzdata-2025.3-py2.py3-none-any.whl", hash = "sha256:06a47e5700f3081aab02b2e513160914ff0694bce9947d6b76ebd6bf57cfc5d1", size = 348521 },
 ]
 
 [[package]]
