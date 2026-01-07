@@ -79,4 +79,4 @@ dev = [
 
 [tool.uv.sources]
 	# maze-dataset = { git = "https://github.com/understanding-search/maze-dataset", branch = "dev" } # TODO: switch to pypi
-	maze-dataset = { path = "../maze-dataset" }
+	# maze-dataset = { path = "../maze-dataset" }
